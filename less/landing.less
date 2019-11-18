@@ -50,3 +50,41 @@ body {
         }
     }
 }
+
+.bottom{
+    .flex(column, space-evenly, stretch);
+    margin: 3%;
+
+    .contentContainer {
+        .flex(row, space-between, stretch);
+        margin: 0 0 4%;
+        
+        img {
+            width: 30%;
+            margin-right: 4%;
+        }
+
+        .textBlock {
+            padding: 3%;
+            background-color: @text-box;
+            font-size: 2rem;
+            margin: 0 auto;
+        }
+    }
+
+    .contentContainerRev {
+        .flex(row-reverse, space-between, stretch);
+
+        img {
+            width: 30%;
+            margin-left: 4%;
+        }
+
+        .textBlock {
+            padding: 3%;
+            background-color: @text-box;
+            font-size: 2rem;
+            margin: 0 auto;
+        }
+    }
+}
