@@ -1,0 +1,50 @@
+.topAbout {
+    background-image: url("../img/heartPears.jpg");
+    background-color: green;
+    height: 500px;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0;
+    .flex(column, space-around, center);
+    border-bottom: 6px solid black;
+}
+
+.bottomAbout {
+    .flex(row, space-between, center);
+    flex-wrap: wrap;
+}
+
+.personContainer {
+    .flex(row, space-between, center);
+    width: 50%;
+    margin-right: 2% 15%;
+
+    img {
+        border-radius: 50%;
+        width: 75%;
+    }
+
+    .aboutContainer {
+        width: 100%;
+        background-color: @platinum;
+    }
+
+    h3 {
+        font-size: 1.75rem;
+        font-weight: bold;
+    }
+
+    h4 {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    p {
+        font-size: 1.25rem;
+    }
+
+    .from {
+        font-weight: bold;
+    }
+}

@@ -126,12 +126,14 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-h1 {
+h1,
+h5 {
   font-family: 'Oregano', cursive;
 }
-p {
-  font-family: 'Averia Serif Libre', cursive;
-}
+h2,
+h3,
+h4,
+p,
 a {
   font-family: 'Averia Serif Libre', cursive;
 }
@@ -186,10 +188,11 @@ footer {
   width: 100%;
   background-color: #53131e;
 }
-footer p {
-  line-height: 3.5;
+footer h5 {
+  line-height: 3;
   color: #E7D7C1;
   text-align: center;
+  font-size: 1.25rem;
 }
 .top {
   background-image: url("../img/mainPic.jpg");
@@ -279,4 +282,55 @@ footer p {
   background-color: #E0EEE7;
   font-size: 2rem;
   margin: 0 auto;
+}
+.topAbout {
+  background-image: url("../img/heartPears.jpg");
+  background-color: green;
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 6px solid black;
+}
+.bottomAbout {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.personContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  margin-right: 2% 15%;
+}
+.personContainer img {
+  border-radius: 50%;
+  width: 75%;
+}
+.personContainer .aboutContainer {
+  width: 100%;
+  background-color: #E0EEE7;
+}
+.personContainer h3 {
+  font-size: 1.75rem;
+  font-weight: bold;
+}
+.personContainer h4 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.personContainer p {
+  font-size: 1.25rem;
+}
+.personContainer .from {
+  font-weight: bold;
 }
