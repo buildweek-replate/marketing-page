@@ -1,0 +1,48 @@
+header {
+    width: 100%;
+    background: @header-bg;
+    .flex(row, space-between, center);
+    position: fixed;
+    top: 0;
+}
+
+.logoBox {
+    .flex(row, space-evenly, center);
+    width: 150px;
+    padding: 1% 7%;
+
+    .logo {
+        width: 50%;
+        padding: 1%;
+    }
+
+    h1 {
+        color: @header-text;
+        font-size: 4rem;
+        padding-left: 15%;
+    }
+}
+
+nav {
+    .flex(row, space-evenly, center);
+    width: 50%;
+
+    .navVl {
+        width: 0;
+        height: 25px;
+        border: 2px solid @header-text;
+        border-radius: 2px;
+        margin: 0 -3%;
+    }
+
+    .navItem {
+        color: @header-text;
+        font-size: 1.3rem;
+        text-decoration: none;
+        font-weight: bold;
+    }
+}
+
+
+
+
