@@ -182,6 +182,15 @@ nav .navItem {
   text-decoration: none;
   font-weight: bold;
 }
+footer {
+  width: 100%;
+  background-color: #53131e;
+}
+footer p {
+  line-height: 3.5;
+  color: #E7D7C1;
+  text-align: center;
+}
 .top {
   background-image: url("../img/mainPic.jpg");
   background-color: green;
