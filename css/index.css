@@ -322,6 +322,7 @@ footer h5 {
   width: 30%;
   margin-right: 4%;
   box-shadow: 0 5px 8px 0 rgba(37, 37, 37, 0.95);
+  border-radius: 25px;
 }
 .bottom .contentContainer .textBlock {
   padding: 3%;
@@ -329,6 +330,7 @@ footer h5 {
   font-size: 2rem;
   margin: 0 auto;
   box-shadow: 0 5px 8px 0 rgba(37, 37, 37, 0.95);
+  border-radius: 25px;
 }
 .bottom .contentContainerRev {
   display: flex;
@@ -348,6 +350,37 @@ footer h5 {
   margin: 0 auto;
   box-shadow: 0 5px 8px 0 rgba(37, 37, 37, 0.95);
 }
+@media (max-width: 500px) {
+  .bottom {
+    margin: 5%;
+  }
+  .bottom .contentContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .bottom .contentContainer img {
+    width: 100%;
+  }
+  .bottom .contentContainer .textBlock {
+    padding: 4%;
+    font-size: 1.7rem;
+  }
+  .bottom .contentContainerRev {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  .bottom .contentContainerRev img {
+    width: 100%;
+  }
+  .bottom .contentContainerRev .textBlock {
+    padding: 4%;
+    font-size: 1.7rem;
+  }
+}
 .topAbout {
   background-image: url("../img/heartPears.jpg");
   background-color: green;
@@ -362,12 +395,26 @@ footer h5 {
   align-items: center;
   border-bottom: 6px solid black;
 }
+@media (max-width: 500px) {
+  .topAbout {
+    border-bottom: 5px solid black;
+    height: 500px;
+  }
+}
 .bottomAbout {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+}
+@media (max-width: 500px) {
+  .bottomAbout {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 .personContainer {
   display: flex;
@@ -378,7 +425,7 @@ footer h5 {
   margin: 2% 2%;
 }
 .personContainer img {
-  border-radius: 50%;
+  border-radius: 25px;
   width: 95%;
   box-shadow: 0 5px 8px 0 rgba(37, 37, 37, 0.95);
 }
@@ -387,6 +434,7 @@ footer h5 {
   background-color: #E0EEE7;
   padding: 5%;
   box-shadow: 0 5px 8px 0 rgba(37, 37, 37, 0.95);
+  border-radius: 25px;
 }
 .personContainer h3 {
   font-size: 1.6rem;
@@ -405,4 +453,20 @@ footer h5 {
 .personContainer .from {
   font-weight: bold;
   padding-bottom: 3%;
+}
+@media (max-width: 500px) {
+  .personContainer {
+    width: 90%;
+    margin: 4% auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .personContainer img {
+    width: 100%;
+  }
+  .personContainer .aboutContainer {
+    width: 100%;
+  }
 }
