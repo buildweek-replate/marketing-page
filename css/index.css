@@ -147,6 +147,14 @@ header {
   position: fixed;
   top: 0;
 }
+@media (max-width: 500px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
 .logoBox {
   display: flex;
   flex-direction: row;
@@ -163,6 +171,15 @@ header {
   color: #E7D7C1;
   font-size: 4rem;
   padding-left: 15%;
+}
+@media (max-width: 500px) {
+  .logoBox .logo {
+    width: 30%;
+    padding: 2% 0;
+  }
+  .logoBox h1 {
+    font-size: 2.5rem;
+  }
 }
 nav {
   display: flex;
@@ -185,6 +202,19 @@ nav .navItem {
   font-weight: bold;
   text-align: center;
 }
+@media (max-width: 500px) {
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    padding: 1% 2% 3%;
+  }
+  nav .navItem {
+    font-size: 1.1rem;
+  }
+}
 footer {
   width: 100%;
   background-color: #53131e;
@@ -195,9 +225,14 @@ footer h5 {
   text-align: center;
   font-size: 1.25rem;
 }
+@media (max-width: 500px) {
+  footer h5 {
+    font-size: 1.1rem;
+  }
+}
 .top {
   background-image: url("../img/mainPic.jpg");
-  background-color: green;
+  background-color: #023818;
   height: 700px;
   background-position: center;
   background-repeat: no-repeat;
@@ -216,7 +251,7 @@ footer h5 {
   margin: 10% auto 8%;
   background-color: rgba(2, 56, 24, 0.8);
   color: #F7EDF0;
-  padding: 1%;
+  padding: 2%;
   border-radius: 25px;
   box-shadow: 0 12px 16px 0 rgba(37, 37, 37, 0.95);
 }
@@ -244,6 +279,30 @@ footer h5 {
 }
 .top .buttonContainer a {
   text-decoration: none;
+}
+@media (max-width: 500px) {
+  .top {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 5px solid black;
+    height: 500px;
+  }
+  .top .infoContainer {
+    font-size: 1.5rem;
+    width: 80%;
+    margin: 25% auto 12.5%;
+    padding: 3%;
+  }
+  .top .buttonContainer {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 15%;
+  }
 }
 .bottom {
   display: flex;
@@ -292,7 +351,7 @@ footer h5 {
 .topAbout {
   background-image: url("../img/heartPears.jpg");
   background-color: green;
-  height: 500px;
+  height: 700px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
