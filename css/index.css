@@ -202,6 +202,10 @@ nav .navItem {
   font-weight: bold;
   text-align: center;
 }
+nav .navItem:hover {
+  transform: scale(1.1);
+  font-weight: bolder;
+}
 @media (max-width: 500px) {
   nav {
     display: flex;
@@ -211,8 +215,12 @@ nav .navItem {
     width: 90%;
     padding: 1% 2% 3%;
   }
+  nav .navVl {
+    border: 1px solid #E7D7C1;
+    margin: 0;
+  }
   nav .navItem {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 }
 footer {
@@ -272,6 +280,7 @@ footer h5 {
   width: 60%;
   border-radius: 25px;
   box-shadow: 0 12px 16px 0 rgba(37, 37, 37, 0.95);
+  line-height: 1.1;
 }
 .top .buttonContainer .button:active {
   box-shadow: 0 9px 13px 0 rgba(37, 37, 37, 0.95);
@@ -302,6 +311,10 @@ footer h5 {
     justify-content: space-between;
     align-items: center;
     margin-left: 15%;
+  }
+  .top .buttonContainer .button {
+    font-size: 1.2rem;
+    padding: 10%;
   }
 }
 .bottom {
@@ -342,6 +355,7 @@ footer h5 {
   width: 30%;
   margin-left: 4%;
   box-shadow: 0 5px 8px 0 rgba(37, 37, 37, 0.95);
+  border-radius: 25px;
 }
 .bottom .contentContainerRev .textBlock {
   padding: 3%;
@@ -349,6 +363,7 @@ footer h5 {
   font-size: 2rem;
   margin: 0 auto;
   box-shadow: 0 5px 8px 0 rgba(37, 37, 37, 0.95);
+  border-radius: 25px;
 }
 @media (max-width: 500px) {
   .bottom {
@@ -359,9 +374,11 @@ footer h5 {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    margin-bottom: 8%;
   }
   .bottom .contentContainer img {
     width: 100%;
+    margin-bottom: 2%;
   }
   .bottom .contentContainer .textBlock {
     padding: 4%;
@@ -375,6 +392,7 @@ footer h5 {
   }
   .bottom .contentContainerRev img {
     width: 100%;
+    margin-bottom: 2%;
   }
   .bottom .contentContainerRev .textBlock {
     padding: 4%;
@@ -428,6 +446,11 @@ footer h5 {
   border-radius: 25px;
   width: 95%;
   box-shadow: 0 5px 8px 0 rgba(37, 37, 37, 0.95);
+  border: 3px outset #E0EEE7;
+}
+.personContainer img:hover {
+  transform: scale(1.15);
+  box-shadow: 0 10px 16px 0 rgba(37, 37, 37, 0.95);
 }
 .personContainer .aboutContainer {
   width: 100%;
