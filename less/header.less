@@ -7,8 +7,8 @@ header {
 
     @media @mobile {
         .flex(column, space-around, center);
-    }
-}
+    } // Ends @media @mobile
+} // Ends header
 
 .logoBox {
     .flex(row, space-evenly, center);
@@ -18,25 +18,29 @@ header {
     .logo {
         width: 50%;
         padding: 1%;
-    }
+    } // Ends .logo
 
     h1 {
         color: @header-text;
         font-size: 4rem;
         padding-left: 15%;
-    }
+    } // Ends h1
+
+    @media @tablet {
+        margin: 0 auto;
+    } // Ends @media @tablet
 
     @media @mobile {
         .logo {
             width: 30%;
             padding: 2% 0;
-        }
+        } // Ends .logo
 
         h1 {
             font-size: 2.5rem;
-        }
-    }
-}
+        } // Ends h1
+    } // Ends @media @mobile
+} // Ends .logoBox
 
 nav {
     .flex(row, space-evenly, center);
@@ -48,7 +52,7 @@ nav {
         border: 2px solid @header-text;
         border-radius: 2px;
         margin: 0 -3%;
-    }
+    } // Ends .navVl
 
     .navItem {
         color: @header-text;
@@ -56,28 +60,33 @@ nav {
         text-decoration: none;
         font-weight: bold;
         text-align: center;
-    }
+    } // Ends .navItem
 
     .navItem:hover {
         transform: scale(1.1);
         font-weight: bolder;
-    }
+    } // Ends .navItem:hover
+
+    @media @tablet {
+        width: 60%;
+    } // ends @media @tablet
+
 
     @media @mobile {
-        .flex(row, space-between, center);
+        .flex(row, space-around, center);
         width: 90%;
         padding: 1% 2% 3%;
 
         .navVl {
             border: 1px solid @header-text;
             margin: 0;
-        }
+        } // Ends .navVl
 
         .navItem {
             font-size: 1rem;
-        }
-    }
-}
+        } // Ends .navItem
+    } // Ends @media @mobile
+} // Ends nav
 
 
 
