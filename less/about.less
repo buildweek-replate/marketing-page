@@ -53,9 +53,9 @@
 
     .aboutContainer {
         width: 100%;
-        height: 100%;
+        height:12rem;
         background-color: @platinum;
-        padding: 5%;
+        padding: 3%;
         .shadow(0, 5px, 8px, 0);
         border-radius: @radius;
         border: @border;
@@ -96,5 +96,13 @@
         .aboutContainer {
             width: 100%;
         }
+    }
+}
+
+.personContainerRev {
+    .flex(row-reverse, space-between, center);
+
+    @media @mobile {
+        .flex(column, space-between, center);
     }
 }
