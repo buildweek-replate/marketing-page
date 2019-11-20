@@ -467,6 +467,7 @@ footer h5 {
 }
 .personContainer .aboutContainer {
   width: 100%;
+  height: 100%;
   background-color: #E0EEE7;
   padding: 5%;
   box-shadow: 0 5px 8px 0 #1f1e1e;
@@ -486,6 +487,7 @@ footer h5 {
 .personContainer p {
   font-size: 1.2rem;
   line-height: 1.1;
+  padding-bottom: 1%;
 }
 .personContainer .from {
   font-weight: bold;
