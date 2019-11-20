@@ -1,7 +1,7 @@
 .top {
+    height: 700px;
     background-image: url("../img/mainPic.jpg");
     background-color: @dark-bg;
-    height: 700px;
     background-position:center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -10,16 +10,16 @@
     border-bottom: 6px solid black;
 
     .infoContainer {
-        text-align: center;
-        font-size: 1.8rem;
         width: 60%;
         margin: 10% auto 8%;
-        background-color: rgba(2, 56, 24, 0.8);
-        color: @pink-white;
         padding: 2%;
+        text-align: center;
+        font-size: 1.8rem;
+        color: @pink-white;
+        background-color: rgba(2, 56, 24, 0.8);
         border-radius: @radius;
         .shadow(0, 12px, 16px, 0);
-    }
+    } // Ends .infoContainer
     
     .buttonContainer {
         width: 50%;
@@ -28,79 +28,80 @@
         .flex(row, space-around, stretch);
 
         .button {
+            width: 100%;
             margin: 0 auto;
-            background-color: @dark-bg;
-            color: @pink-white;
             padding: 40%;
             font-size: 1.5rem;
-            width: 100%;
+            line-height: 1.25;
+            color: @pink-white;
+            background-color: @dark-bg;
+            border: 2px outset rgb(4, 77, 33);
             border-radius: @radius;
             .shadow(0, 15px, 19px, 0);
-            line-height: 1.25;
-            border: 2px outset rgb(4, 77, 33);
-        }
+        } // Ends .button
 
         .button:active {
             .shadow(0, 7px, 11px, 0);
             transform: translateY(8px);
-        }
+        } // Ends .button:active
 
         a {
             text-decoration: none;
-        }
-    }
+        } // Ends a
+    } // Ends .buttonContainer
 
     @media @mobile {
+        height: 500px;
         .flex(column, space-around, stretch);
         border-bottom: 5px solid black;
-        height: 500px;
 
         .infoContainer {
-            font-size: 1.5rem;
             width: 80%;
             margin: 25% auto 12.5%;
             padding: 3%;
-        }
+            font-size: 1.5rem;
+        } // Ends .infoContainer
 
         .buttonContainer {
             width: 50%;
-            .flex(row, space-between, stretch);
             margin: 0 auto;
+            .flex(row, space-between, stretch);
             
             .button {
-                font-size: 1.3rem;
                 padding: 25%;
-            }
-        }
-    }
-}
+                font-size: 1.3rem;
+            } // Ends .button
+        } // Ends .buttonContainer
+    } // Ends @media @mobile
+} // Ends .top
 
-.bottom{
-    .flex(column, space-evenly, stretch);
+.bottom {
     margin: 3%;
+    .flex(column, space-evenly, stretch);
 
     .contentContainer {
-        .flex(row, space-between, stretch);
         margin: 0 0 4%;
+        .flex(row, space-between, stretch);
         
         img {
             width: 30%;
             margin-right: 4%;
-            .shadow(0, 5px, 8px, 0);
             border: @border;
             border-radius: @radius;
-        }
+            .shadow(0, 5px, 8px, 0);
+            object-fit: cover;
+        } // Ends img
 
         .textBlock {
-            padding: 3%;
-            background-color: @text-box;
-            font-size: 2rem;
             margin: 0 auto;
-            .shadow(0, 5px, 8px, 0);
-            border-radius: @radius;
+            padding: 3%;
+            font-size: 2rem;
+            background-color: @text-box;
             border: @border;
-        }
-    }
+            border-radius: @radius;
+            .shadow(0, 5px, 8px, 0);
+        } // Ends .textBlock
+    } // Ends .contentContainer
 
     .contentContainerRev {
         .flex(row-reverse, space-between, stretch);
@@ -108,86 +109,93 @@
         img {
             width: 30%;
             margin-left: 4%;
-            .shadow(0, 5px, 8px, 0);
             border: @border;
             border-radius: @radius;
-        }
+            .shadow(0, 5px, 8px, 0);
+            object-fit: cover;
+        } // Ends img
 
         .textBlock {
-            padding: 3%;
-            background-color: @text-box;
-            font-size: 2rem;
             margin: 0 auto;
-            .shadow(0, 5px, 8px, 0);
-            border-radius: @radius;
+            padding: 3%;
+            font-size: 2rem;
+            background-color: @text-box;
             border: @border;
-        }
-    }
+            border-radius: @radius;
+            .shadow(0, 5px, 8px, 0);
+        } // Ends .textBlock
+    } // Ends .contentContainerRev
+
+    @media @tablet {
+        .flex(row, space-between, flex-start);
+
+        .contentContainer {
+            width: 50%;
+            padding: 0 2%;
+            .flex(column, center, center);
+            
+            img {
+                width: 100%;
+                margin: 0 2%;
+            } // Ends img
+            
+            .textBlock {
+                margin-top: 1.5%;
+            } // Ends .textBlock
+        } // Ends .contentContainer
+
+        .contentContainerRev {
+            width: 50%;
+            padding: 0 2%;
+            .flex(column, center, center);
+
+            img {
+                width: 100%;
+                margin: 0 2%;
+            } // Ends img
+
+            .textBlock {
+                margin-top: 1.5%;
+            } // Ends .textBlock
+        } // Ends .contentContainerRev
+    } // Ends @media @tablet
 
     @media @mobile {
         margin: 5%;
+        .flex(column, space-evenly, center);
 
         .contentContainer {
-            .flex(column, center, flex-start);
-            margin-bottom: 8%;
+            width: 95%;
+            margin: 0 auto 8%;
+            .flex(column, center, center);
 
             img {
                 width: 100%;
-                margin-bottom: 2%;
-            }
+                margin: 0 auto 2%;
+            } // Ends img
     
             .textBlock {
+                margin: 0 auto;
                 padding: 4%;
                 font-size: 1.7rem;
-            }
-        }
+            } // Ends .textBlock
+        } // Ends .contentContainer
 
         .contentContainerRev {
-            .flex(column, center, flex-end);
+            width: 95%;
+            margin: 0 auto;
+            .flex(column, center, center);
 
             img {
                 width: 100%;
-                margin-bottom: 2%;
-            }
-
+                margin: 0 auto 2%;
+            } // Ends img
+    
             .textBlock {
+                margin: 0 auto;
                 padding: 4%;
                 font-size: 1.7rem;
-            }
-        }
-    }
-
-    @media @tablet {
-        .flex(row, space-between, center);
-
-        .contentContainer {
-            .flex(column, center, center);
-            width: 50%;
-            padding: 0 2%;
-            
-            img {
-                width: 100%;
-                margin: 0 2%;
-            }
-            
-            .textBlock {
-                margin-top: 1.5%;
-            }
-        }
-
-        .contentContainerRev {
-            .flex(column, center, center);
-            width: 50%;
-            padding: 0 2%;
-
-            img {
-                width: 100%;
-                margin: 0 2%;
-            }
-
-            .textBlock {
-                margin-top: 1.5%;
-            }
-        }
-    }
-}
+            } // Ends .textBlock
+        } // Ends .contentContainerRev
+    } // Ends @media @mobile
+} // Ends .bottom

@@ -1,7 +1,7 @@
 .topAbout {
+    height: 700px;
     background-image: url("../img/heartPears.jpg");
     background-color: green;
-    height: 700px;
     background-position:center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -12,18 +12,18 @@
     .infoContainer {
         width: 100%;
         padding: 5%;
-    }
+    } // Ends .infoContainer
 
     @media @mobile {
-        border-bottom: 5px solid black;
         height: 500px;
+        border-bottom: 5px solid black;
 
         .infoContainer {
             width: 60%;
             padding: 4%;
-        }
-    }
-}
+        } // Ends .infoContainer
+    } // Ends @media @mobile
+} // ends .topAbout
 
 .bottomAbout {
     .flex(row, space-between, center);
@@ -31,63 +31,63 @@
 
     @media @mobile {
         .flex(column, space-between, center);
-    }
+    } // Ends @media @mobile
 
     @media @tablet {
         .flex(column, space-between, center);
         flex-wrap: wrap;
-    }
-}
+    } // Ends @media @tablet
+} // Ends .bottomAbout
 
 .personContainer {
-    .flex(row, space-between, center);
     width: 45%;
     margin: 2% 2%;
+    .flex(row, space-between, center);
 
     img {
-        border-radius: @radius;
         width: 95%;
-        .shadow(0, 5px, 8px, 0);
         border: @border;
-    }
+        border-radius: @radius;
+        .shadow(0, 5px, 8px, 0);
+    } // Ends img
 
     img:hover {
-        transform: scale(1.15);
         .shadow(0, 10px, 16px, 0);
-    }
+        transform: scale(1.15);
+    } // Ends img:hover
 
     .aboutContainer {
         width: 100%;
         height:12rem;
-        background-color: @platinum;
         padding: 3%;
-        .shadow(0, 5px, 8px, 0);
-        border-radius: @radius;
+        background-color: @platinum;
         border: @border;
-    }
+        border-radius: @radius;
+        .shadow(0, 5px, 8px, 0);
+    } // Ends .aboutContainer
 
     h3 {
         font-size: 1.6rem;
         font-weight: bold;
         line-height: 1.1;
-    }
+    } // Ends h3
 
     h4 {
         font-size: 1.4rem;
         font-weight: bold;
         line-height: 1.1;
-    }
+    } // Ends h4
 
     p {
+        padding-bottom: 1%;
         font-size: 1.2rem;
         line-height: 1.1;
-        padding-bottom: 1%;
-    }
+    } // Ends p
 
     .from {
-        font-weight: bold;
         padding-bottom: 3%;
-    }
+        font-weight: bold;
+    } // Ends .from
 
     @media @mobile {
         width: 90%;
@@ -96,22 +96,22 @@
 
         img {
             width: 100%;
-        }
+        } // Ends img
 
         .aboutContainer {
             width: 100%;
-        }
-    }
+        } // Ends .aboutContainer
+    } // Ends @media @mobile
 
     @media @tablet {
         width: 100%;
-    }
-}
+    } // Ends @media @tablet
+} // Ends .personContainer
 
 .personContainerRev {
     .flex(row-reverse, space-between, center);
 
     @media @mobile {
         .flex(column, space-between, center);
-    }
-}
+    } // Ends @media @mobile
+} // Ends .personContainerRev
