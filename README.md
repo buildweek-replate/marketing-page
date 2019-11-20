@@ -33,3 +33,21 @@ I used yarn, Less, and less-watch-compiler.
     * cd into the project in Git Bash (A command line cheat sheet can be found [here](https://www.git-tower.com/blog/command-line-cheat-sheet/))
     * Once you are in the root of your project, run `less-watch-compiler less css index.less`
     * You can start and stop the less-watch-compiler with `CTRL + C`
+
+* Navigating
+
+    * The compiled index.css file can be found in the **css** folder.
+    * The images used can be found in the **img** folder.
+    * The LESS files can be found in the **less** folder.
+        * **about.less** houses the About Us page styles.
+        * **footer.less** houses the Footer styles.
+        * **global.less** houses a few global styles.
+        * **header.less** houses the header styles.
+        * **index.less** imports all of the other less files to be compiled.
+        * **landing.less** houses the Landing page styles.
+        * **mixins.less** houses a couple parametric mixins used throughout the Landing and About Us pages.
+        * **reset.less** has the Meyer reset.
+        * **variables.less** has color and style variables, as well as the @mobile and @tablet escaped variables.
+    * Mobile and Tablet styling is nested within the LESS files.
+    * The Landing page content is found in **index.html**.
+    * The About Us page content is found in **about.html**.
