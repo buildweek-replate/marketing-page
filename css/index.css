@@ -250,6 +250,7 @@ footer h5 {
 }
 .top {
   height: 700px;
+  margin: 0 auto;
   background-image: url("../img/mainPic.jpg");
   background-color: #023818;
   background-position: center;
@@ -274,25 +275,25 @@ footer h5 {
   box-shadow: 0 12px 16px 0 #1f1e1e;
 }
 .top .buttonContainer {
-  width: 50%;
+  width: 60%;
   margin: 0 auto;
   text-align: center;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  align-items: stretch;
+  justify-content: space-evenly;
+  align-items: center;
 }
 .top .buttonContainer .button {
   width: 100%;
-  margin: 0 auto;
-  padding: 40%;
+  padding: 30%;
+  margin: 0 auto 0 -30%;
   font-size: 1.5rem;
-  line-height: 1.2;
   color: #F7EDF0;
   background-color: #023818;
   border: 2px outset #044d21;
   border-radius: 25px;
   box-shadow: 0 15px 19px 0 #1f1e1e;
+  object-fit: scale;
 }
 .top .buttonContainer .button:active {
   box-shadow: 0 7px 11px 0 #1f1e1e;
@@ -493,6 +494,11 @@ footer h5 {
 .topAbout .infoContainer {
   width: 100%;
   padding: 5%;
+}
+@media (max-width: 800px) {
+  .topAbout .infoContainer {
+    width: 75%;
+  }
 }
 @media (max-width: 500px) {
   .topAbout {
