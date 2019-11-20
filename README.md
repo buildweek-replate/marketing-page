@@ -10,7 +10,7 @@ Many businesses have leftover food at the end of the day. Replate is an easy to 
 
 ### Dependencies
 
-I used yarn, Less, and less-watch-compiler.
+I used Node, yarn, Less, and less-watch-compiler.
 
 
 ### Steps
