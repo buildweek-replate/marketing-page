@@ -1,5 +1,6 @@
 .top {
     height: 700px;
+    margin: 0 auto;
     background-image: url("../img/mainPic.jpg");
     background-color: @dark-bg;
     background-position:center;
@@ -22,22 +23,23 @@
     } // Ends .infoContainer
     
     .buttonContainer {
-        width: 50%;
+        width: 60%;
         margin: 0 auto;
         text-align: center;
-        .flex(row, space-around, stretch);
+        .flex(row, space-evenly, center);
+
 
         .button {
             width: 100%;
-            margin: 0 auto;
-            padding: 40%;
+            padding: 30%;
+            margin: 0 auto 0 -30%;
             font-size: 1.5rem;
-            line-height: 1.2;
             color: @pink-white;
             background-color: @dark-bg;
             border: 2px outset rgb(4, 77, 33);
             border-radius: @radius;
             .shadow(0, 15px, 19px, 0);
+            object-fit: scale;
         } // Ends .button
 
         .button:active {
