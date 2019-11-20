@@ -181,6 +181,11 @@ header {
     font-size: 2.5rem;
   }
 }
+@media (max-width: 800px) {
+  .logoBox {
+    margin: 0 auto;
+  }
+}
 nav {
   display: flex;
   flex-direction: row;
@@ -221,6 +226,11 @@ nav .navItem:hover {
   }
   nav .navItem {
     font-size: 1rem;
+  }
+}
+@media (max-width: 800px) {
+  nav {
+    width: 60%;
   }
 }
 footer {
@@ -405,6 +415,44 @@ footer h5 {
     font-size: 1.7rem;
   }
 }
+@media (max-width: 800px) {
+  .bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .bottom .contentContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    padding: 0 2%;
+  }
+  .bottom .contentContainer img {
+    width: 100%;
+    margin: 0 2%;
+  }
+  .bottom .contentContainer .textBlock {
+    margin-top: 1.5%;
+  }
+  .bottom .contentContainerRev {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    padding: 0 2%;
+  }
+  .bottom .contentContainerRev img {
+    width: 100%;
+    margin: 0 2%;
+  }
+  .bottom .contentContainerRev .textBlock {
+    margin-top: 1.5%;
+  }
+}
 .topAbout {
   background-image: url("../img/heartPears.jpg");
   background-color: green;
@@ -446,6 +494,15 @@ footer h5 {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+  }
+}
+@media (max-width: 800px) {
+  .bottomAbout {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
   }
 }
 .personContainer {
@@ -507,6 +564,11 @@ footer h5 {
     width: 100%;
   }
   .personContainer .aboutContainer {
+    width: 100%;
+  }
+}
+@media (max-width: 800px) {
+  .personContainer {
     width: 100%;
   }
 }

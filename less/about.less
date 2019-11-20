@@ -32,6 +32,11 @@
     @media @mobile {
         .flex(column, space-between, center);
     }
+
+    @media @tablet {
+        .flex(column, space-between, center);
+        flex-wrap: wrap;
+    }
 }
 
 .personContainer {
@@ -96,6 +101,10 @@
         .aboutContainer {
             width: 100%;
         }
+    }
+
+    @media @tablet {
+        width: 100%;
     }
 }
 

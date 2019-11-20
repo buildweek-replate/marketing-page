@@ -156,4 +156,38 @@
             }
         }
     }
+
+    @media @tablet {
+        .flex(row, space-between, center);
+
+        .contentContainer {
+            .flex(column, center, center);
+            width: 50%;
+            padding: 0 2%;
+            
+            img {
+                width: 100%;
+                margin: 0 2%;
+            }
+            
+            .textBlock {
+                margin-top: 1.5%;
+            }
+        }
+
+        .contentContainerRev {
+            .flex(column, center, center);
+            width: 50%;
+            padding: 0 2%;
+
+            img {
+                width: 100%;
+                margin: 0 2%;
+            }
+
+            .textBlock {
+                margin-top: 1.5%;
+            }
+        }
+    }
 }
