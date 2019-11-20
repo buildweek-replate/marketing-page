@@ -32,7 +32,7 @@
             margin: 0 auto;
             padding: 40%;
             font-size: 1.5rem;
-            line-height: 1.25;
+            line-height: 1.2;
             color: @pink-white;
             background-color: @dark-bg;
             border: 2px outset rgb(4, 77, 33);
@@ -48,6 +48,11 @@
         a {
             text-decoration: none;
         } // Ends a
+
+        span {
+            font-size: 1.1rem;
+            line-height: 1;
+        }
     } // Ends .buttonContainer
 
     @media @mobile {
@@ -95,11 +100,16 @@
         .textBlock {
             margin: 0 auto;
             padding: 3%;
-            font-size: 2rem;
+            font-size: 1.5rem;
             background-color: @text-box;
             border: @border;
             border-radius: @radius;
             .shadow(0, 5px, 8px, 0);
+
+            p {
+                padding: 1% 0;
+                line-height: 1.25;
+            } // Ends p
         } // Ends .textBlock
     } // Ends .contentContainer
 
@@ -118,11 +128,16 @@
         .textBlock {
             margin: 0 auto;
             padding: 3%;
-            font-size: 2rem;
+            font-size: 1.5rem;
             background-color: @text-box;
             border: @border;
             border-radius: @radius;
             .shadow(0, 5px, 8px, 0);
+
+            p {
+                padding: 1% 0;
+                line-height: 1.25;
+            } // Ends p
         } // Ends .textBlock
     } // Ends .contentContainerRev
 
