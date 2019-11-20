@@ -202,6 +202,10 @@ nav .navItem {
   font-weight: bold;
   text-align: center;
 }
+nav .navItem:hover {
+  transform: scale(1.1);
+  font-weight: bolder;
+}
 @media (max-width: 500px) {
   nav {
     display: flex;
@@ -211,8 +215,12 @@ nav .navItem {
     width: 90%;
     padding: 1% 2% 3%;
   }
+  nav .navVl {
+    border: 1px solid #E7D7C1;
+    margin: 0;
+  }
   nav .navItem {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 }
 footer {
@@ -253,7 +261,7 @@ footer h5 {
   color: #F7EDF0;
   padding: 2%;
   border-radius: 25px;
-  box-shadow: 0 12px 16px 0 rgba(37, 37, 37, 0.95);
+  box-shadow: 0 12px 16px 0 #1f1e1e;
 }
 .top .buttonContainer {
   width: 50%;
@@ -267,15 +275,17 @@ footer h5 {
 .top .buttonContainer .button {
   background-color: #023818;
   color: #F7EDF0;
-  padding: 8%;
+  padding: 40%;
   font-size: 1.5rem;
-  width: 60%;
+  width: 100%;
   border-radius: 25px;
-  box-shadow: 0 12px 16px 0 rgba(37, 37, 37, 0.95);
+  box-shadow: 0 15px 19px 0 #1f1e1e;
+  line-height: 1.25;
+  border: 2px outset #044d21;
 }
 .top .buttonContainer .button:active {
-  box-shadow: 0 9px 13px 0 rgba(37, 37, 37, 0.95);
-  transform: translateY(3px);
+  box-shadow: 0 7px 11px 0 #1f1e1e;
+  transform: translateY(8px);
 }
 .top .buttonContainer a {
   text-decoration: none;
@@ -296,12 +306,16 @@ footer h5 {
     padding: 3%;
   }
   .top .buttonContainer {
-    width: 80%;
+    width: 50%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-left: 15%;
+    margin: 0 auto;
+  }
+  .top .buttonContainer .button {
+    font-size: 1.3rem;
+    padding: 25%;
   }
 }
 .bottom {
@@ -321,7 +335,8 @@ footer h5 {
 .bottom .contentContainer img {
   width: 30%;
   margin-right: 4%;
-  box-shadow: 0 5px 8px 0 rgba(37, 37, 37, 0.95);
+  box-shadow: 0 5px 8px 0 #1f1e1e;
+  border: 3px outset #bbc9c2;
   border-radius: 25px;
 }
 .bottom .contentContainer .textBlock {
@@ -329,8 +344,9 @@ footer h5 {
   background-color: #E0EEE7;
   font-size: 2rem;
   margin: 0 auto;
-  box-shadow: 0 5px 8px 0 rgba(37, 37, 37, 0.95);
+  box-shadow: 0 5px 8px 0 #1f1e1e;
   border-radius: 25px;
+  border: 3px outset #bbc9c2;
 }
 .bottom .contentContainerRev {
   display: flex;
@@ -341,14 +357,18 @@ footer h5 {
 .bottom .contentContainerRev img {
   width: 30%;
   margin-left: 4%;
-  box-shadow: 0 5px 8px 0 rgba(37, 37, 37, 0.95);
+  box-shadow: 0 5px 8px 0 #1f1e1e;
+  border: 3px outset #bbc9c2;
+  border-radius: 25px;
 }
 .bottom .contentContainerRev .textBlock {
   padding: 3%;
   background-color: #E0EEE7;
   font-size: 2rem;
   margin: 0 auto;
-  box-shadow: 0 5px 8px 0 rgba(37, 37, 37, 0.95);
+  box-shadow: 0 5px 8px 0 #1f1e1e;
+  border-radius: 25px;
+  border: 3px outset #bbc9c2;
 }
 @media (max-width: 500px) {
   .bottom {
@@ -359,9 +379,11 @@ footer h5 {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    margin-bottom: 8%;
   }
   .bottom .contentContainer img {
     width: 100%;
+    margin-bottom: 2%;
   }
   .bottom .contentContainer .textBlock {
     padding: 4%;
@@ -375,6 +397,7 @@ footer h5 {
   }
   .bottom .contentContainerRev img {
     width: 100%;
+    margin-bottom: 2%;
   }
   .bottom .contentContainerRev .textBlock {
     padding: 4%;
@@ -395,10 +418,18 @@ footer h5 {
   align-items: center;
   border-bottom: 6px solid black;
 }
+.topAbout .infoContainer {
+  width: 100%;
+  padding: 5%;
+}
 @media (max-width: 500px) {
   .topAbout {
     border-bottom: 5px solid black;
     height: 500px;
+  }
+  .topAbout .infoContainer {
+    width: 60%;
+    padding: 4%;
   }
 }
 .bottomAbout {
@@ -427,14 +458,20 @@ footer h5 {
 .personContainer img {
   border-radius: 25px;
   width: 95%;
-  box-shadow: 0 5px 8px 0 rgba(37, 37, 37, 0.95);
+  box-shadow: 0 5px 8px 0 #1f1e1e;
+  border: 3px outset #bbc9c2;
+}
+.personContainer img:hover {
+  transform: scale(1.15);
+  box-shadow: 0 10px 16px 0 #1f1e1e;
 }
 .personContainer .aboutContainer {
   width: 100%;
   background-color: #E0EEE7;
   padding: 5%;
-  box-shadow: 0 5px 8px 0 rgba(37, 37, 37, 0.95);
+  box-shadow: 0 5px 8px 0 #1f1e1e;
   border-radius: 25px;
+  border: 3px outset #bbc9c2;
 }
 .personContainer h3 {
   font-size: 1.6rem;

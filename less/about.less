@@ -9,9 +9,19 @@
     .flex(column, space-around, center);
     border-bottom: 6px solid black;
 
+    .infoContainer {
+        width: 100%;
+        padding: 5%;
+    }
+
     @media @mobile {
         border-bottom: 5px solid black;
         height: 500px;
+
+        .infoContainer {
+            width: 60%;
+            padding: 4%;
+        }
     }
 }
 
@@ -30,9 +40,15 @@
     margin: 2% 2%;
 
     img {
-        border-radius: 25px;
+        border-radius: @radius;
         width: 95%;
         .shadow(0, 5px, 8px, 0);
+        border: @border;
+    }
+
+    img:hover {
+        transform: scale(1.15);
+        .shadow(0, 10px, 16px, 0);
     }
 
     .aboutContainer {
@@ -40,7 +56,8 @@
         background-color: @platinum;
         padding: 5%;
         .shadow(0, 5px, 8px, 0);
-        border-radius: 25px;
+        border-radius: @radius;
+        border: @border;
     }
 
     h3 {

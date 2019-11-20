@@ -58,13 +58,23 @@ nav {
         text-align: center;
     }
 
+    .navItem:hover {
+        transform: scale(1.1);
+        font-weight: bolder;
+    }
+
     @media @mobile {
         .flex(row, space-between, center);
         width: 90%;
         padding: 1% 2% 3%;
 
+        .navVl {
+            border: 1px solid @header-text;
+            margin: 0;
+        }
+
         .navItem {
-            font-size: 1.1rem;
+            font-size: 1rem;
         }
     }
 }
