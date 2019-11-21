@@ -1,5 +1,6 @@
 .top {
     height: 700px;
+    margin: 0 auto;
     background-image: url("../img/mainPic.jpg");
     background-color: @dark-bg;
     background-position:center;
@@ -22,7 +23,8 @@
     .buttonContainer {
         .basic-set(@width:60%, @m-top:0, @m-right:auto);
         text-align: center;
-        .flex(row, space-around, stretch);
+        .flex(row, space-evenly, center);
+
 
         .button {
             .basic-set(@width:100%, @m-top:0, @m-right:auto, @m-left:-30%, @p-top:40%);
@@ -32,6 +34,7 @@
             border: 2px outset rgb(4, 77, 33);
             border-radius: @radius;
             .shadow(0, 15px, 19px, 0);
+            object-fit: scale;
         } // Ends .button
 
         .button:hover {
