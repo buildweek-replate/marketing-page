@@ -1,4 +1,5 @@
 .topAbout {
+    .basic-set(@m-top:0, @m-right:auto);
     height: 700px;
     background-image: url("../img/heartPears.jpg");
     background-color: @dark-bg;
@@ -16,8 +17,8 @@
     @media @tablet {
         .infoContainer {
             width: 75%;
-        }
-    }
+        } // Ends .infoContainer
+    } // Ends @media @tablet
 
     @media @mobile {
         height: 500px;

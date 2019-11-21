@@ -1,3 +1,4 @@
+// Sets up basic flexbox: flex-direction, justify-content, and align-items.
 .flex(@direction, @j, @a){
     display: flex;
     flex-direction: @direction;
@@ -5,10 +6,12 @@
     align-items: @a;
 }
 
+// Sets up a box shadow: measurements for top, right, bottom, and left.
 .shadow(@top, @right, @bottom, @left){
     box-shadow: @top @right @bottom @left rgb(31, 30, 30);
 }
 
+// Sets basic properties used many times throughout multiple pages in one function: all optional parameters. width, margin-top, margin-right(dependent on top if not specified), margin-bottom(dependent on top if not specified), margin-left(dependent on right if not specified), padding-top, padding-right(dependent on top if not specified), padding-bottom(dependent on top if not specified), padding-left(dependent on right if not specified).
 .basic-set(@width:"", 
 @m-top:"", 
 @m-right:@m-top, 
@@ -23,6 +26,7 @@
 	padding: @p-top @p-right @p-bottom @p-left;
 }
 
+// Sets some basic font properties used many times throughout multiple pages in one function: all optional parameters. font-size, font-weight, and line-height.
 .font-set(@size:"", @weight:"", @height:""){
     font-size: @size;
     font-weight: @weight;
