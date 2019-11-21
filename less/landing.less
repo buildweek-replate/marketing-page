@@ -86,7 +86,7 @@
     .flex(column, space-evenly, stretch);
 
     .contentContainer {
-        margin: 0 0 4%;
+        .basic-set(@m-top:0, @m-right:0, @m-bottom:4%);
         .flex(row, space-between, space-evenly);
         
         img {
@@ -108,10 +108,13 @@
             p {
                 .basic-set(@p-top:1%, @p-right:0);
                 .font-set(@height:1.25);
-                
             } // Ends p
         } // Ends .textBlock
     } // Ends .contentContainer
+
+    .break {
+        .basic-set(@m-top:-2%);
+    } // Ends .break
 
     .contentContainerRev {
         .flex(row-reverse, space-between, stretch);
@@ -201,10 +204,44 @@
             } // Ends .textBlock
         } // Ends .contentContainerRev
     } // Ends @media @mobile
+
+    @media @desk-lg {
+        .basic-set(@m-top:6%);
+        .flex(row, space-evenly, stretch);
+        flex-wrap: wrap;
+
+        .contentContainer {
+            .basic-set(@m-bottom:25%);
+
+            img {
+                .basic-set(@width:20%);
+            } // Ends img
+
+            .textBlock {
+                .basic-set(@width: 60%);
+                .font-set(@size:1.5rem);
+            } // Ends .textBlock
+        } // Ends .contentContainer
+
+        .break {
+            .basic-set(@width:100%, @m-top:1%);
+        }
+
+        .contentContainerRev {
+            img {
+                .basic-set(@width:20%);
+            } // Ends img
+
+            .textBlock {
+                .basic-set(@width: 60%);
+                .font-set(@size:1.5rem);
+            } // Ends .textBlock
+        } // Ends .contentContainerRev
+    } // Ends @media @desk-lg
 } // Ends .bottom
 
 p:hover {
     span{
         color: rgb(248, 104, 128);
-    }
-}
+    } // Ends span
+} // Ends p:hover

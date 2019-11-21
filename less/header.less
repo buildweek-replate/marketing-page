@@ -30,6 +30,17 @@ header {
         margin: 0 auto;
     } // Ends @media @tablet
 
+    @media @tablet-sm {
+        .logo {
+            width: 28%;
+            padding: 2% 0;
+        } // Ends .logo
+
+        h1 {
+            font-size: 2.3rem;
+        } // Ends h1
+    } // Ends @media @tablet-sm
+
     @media @mobile {
         .logo {
             width: 30%;
@@ -71,6 +82,17 @@ nav {
         width: 60%;
     } // ends @media @tablet
 
+    @media @tablet-sm {
+        width: 60%;
+
+        .navVl {
+            border: 1.5px solid @header-text;
+        }
+        .navItem {
+            padding: 1%;
+            font-size: 0.95rem;
+        }
+    }
 
     @media @mobile {
         .flex(row, space-around, center);
