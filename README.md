@@ -29,8 +29,8 @@ I used Node, yarn, Less, and less-watch-compiler.
 
 * Set up the project
 
-    * Fork and clone this project (A git cheat sheet can be found [here](https://www.git-tower.com/blog/git-cheat-sheet))
-    * cd into the project in Git Bash (A command line cheat sheet can be found [here](https://www.git-tower.com/blog/command-line-cheat-sheet/))
+    * Fork and clone this project (A git cheat sheet can be found [here](https://www.git-tower.com/blog/git-cheat-sheet)
+    * cd into the project in Git Bash (A command line cheat sheet can be found [here](https://www.git-tower.com/blog/command-line-cheat-sheet/)
     * Once you are in the root of your project, run `less-watch-compiler less css index.less`
     * You can start and stop the less-watch-compiler with `CTRL + C`
 
@@ -51,3 +51,9 @@ I used Node, yarn, Less, and less-watch-compiler.
     * Mobile and Tablet styling is nested within the LESS files.
     * The Landing page content is found in **index.html**.
     * The About Us page content is found in **about.html**.
+
+---
+
+### Enjoy
+
+Enjoy perusing my code, and maybe building on it! For reference, inspiration, or just to see what it looks like, my gh-pages hosted site can be found [here](https://buildweek-replate.github.io/marketing-page/index.html).
