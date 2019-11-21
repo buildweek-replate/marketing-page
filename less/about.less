@@ -10,8 +10,7 @@
     border-bottom: 6px solid black;
 
     .infoContainer {
-        width: 100%;
-        padding: 5%;
+        .basic-set(@width:100%, @p-top:5%);
     } // Ends .infoContainer
 
     @media @mobile {
@@ -19,34 +18,22 @@
         border-bottom: 5px solid black;
 
         .infoContainer {
-            width: 60%;
-            padding: 4%;
+            .basic-set(@width:60%, @p-top:4%);
         } // Ends .infoContainer
     } // Ends @media @mobile
-} // ends .topAbout
+} // Ends .topAbout
 
 .bottomAbout {
-    .flex(row, space-between, center);
-    flex-wrap: wrap;
-
-    @media @mobile {
-        .flex(column, space-between, center);
-    } // Ends @media @mobile
-
-    @media @tablet {
-        .flex(column, space-between, center);
-        flex-wrap: wrap;
-    } // Ends @media @tablet
+    .basic-set(@m-top:5%);
+    .flex(column, space-between, center);
 } // Ends .bottomAbout
 
 .personContainer {
-    width: 45%;
-    margin: 2% 2%;
+    .basic-set(@width:100%, @m-top:0%, @m-right:auto);
     .flex(row, space-between, center);
-    object-fit: scale-down;
 
     img {
-        width: 95%;
+        .basic-set(@width:98%);
         border: @border;
         border-radius: @radius;
         .shadow(0, 5px, 8px, 0);
@@ -58,58 +45,88 @@
     } // Ends img:hover
 
     .aboutContainer {
-        width: 100%;
-        // height:12rem;
-        padding: 3%;
+        .basic-set(@width:46%, @m-top:0, @m-right:auto, @p-top:3%);
+        text-align: left;
         background-color: @platinum;
         border: @border;
         border-radius: @radius;
+        .flex(column, space-between, center);
         .shadow(0, 5px, 8px, 0);
-
     } // Ends .aboutContainer
 
     h3 {
-        font-size: 1.6rem;
-        font-weight: bold;
-        line-height: 1.1;
+        .basic-set(@p-top:1%);
+        .font-set(@size:1.8rem, @weight:bold, @height:1.1);
     } // Ends h3
 
     h4 {
-        font-size: 1.4rem;
-        font-weight: bold;
-        line-height: 1.1;
+        .font-set(@size:1.6rem, @weight:bold, @height:1.1);
     } // Ends h4
 
     p {
-        padding-bottom: 1%;
-        font-size: 1.1rem;
-        line-height: 1.1;
-        object-fit: scale-down;
+        .basic-set(@p-top:1.5%, @p-bottom:3%);
+        .font-set(@size:1.25rem, @height:1.1);
     } // Ends p
 
     .from {
-        padding-bottom: 3%;
-        font-size: 1.2rem;
-        font-weight: bold;
+        .basic-set(@p-bottom:5%);
+        .font-set(@size:1.4rem, @weight:bold);
     } // Ends .from
 
     @media @mobile {
-        width: 90%;
-        margin: 4% auto;
+        .basic-set(@width:90%, @m-top:4%, @m-right:auto);
         .flex(column, space-between, center);
 
         img {
-            width: 100%;
+            .basic-set(@width:100%);
         } // Ends img
 
         .aboutContainer {
-            width: 100%;
+            .basic-set(@width:100%);
         } // Ends .aboutContainer
     } // Ends @media @mobile
 
     @media @tablet {
-        width: 100%;
+        .basic-set(@width:100%);
+
+        h3 {
+            .font-set(@size:1.6rem, @weight:bold, @height:1.1);
+        } // Ends h3
+    
+        h4 {
+            .font-set(@size:1.4rem, @weight:bold, @height:1.1);
+        } // Ends h4
+    
+        p {
+            .basic-set(@p-bottom:1%);
+            .font-set(@size:1.1rem, @height:1.1);
+        } // Ends p
+    
+        .from {
+            .basic-set(@p-bottom:3%);
+            .font-set(@size:1.2rem, @weight:bold);
+        } // Ends .from
     } // Ends @media @tablet
+
+    @media @tablet-sm {
+        h3 {
+            .font-set(@size:1.2rem, @weight:bold, @height:1.1);
+        } // Ends h3
+    
+        h4 {
+            .font-set(@size:1.1rem, @weight:bold, @height:1.1);
+        } // Ends h4
+    
+        p {
+            .basic-set(@p-bottom:1%);
+            .font-set(@size:0.9rem, @height:1.1);
+        } // Ends p
+    
+        .from {
+            .basic-set(@p-bottom:3%);
+            .font-set(@size:1rem, @weight:bold);
+        } // Ends .from
+    } // Ends @media @tablet-sm
 } // Ends .personContainer
 
 .personContainerRev {
