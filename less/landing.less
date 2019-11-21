@@ -1,5 +1,6 @@
 .top {
     height: 700px;
+    margin: 0 auto;
     background-image: url("../img/mainPic.jpg");
     background-color: @dark-bg;
     background-position:center;
@@ -10,11 +11,9 @@
     border-bottom: 6px solid black;
 
     .infoContainer {
-        width: 60%;
-        margin: 10% auto 8%;
-        padding: 2%;
+        .basic-set(@width:60%, @m-top:10%, @m-right:auto, @m-bottom:8%, @p-top:2%);
+        .font-set(@size:1.8rem);
         text-align: center;
-        font-size: 1.8rem;
         color: @pink-white;
         background-color: rgba(2, 56, 24, 0.8);
         border-radius: @radius;
@@ -22,23 +21,29 @@
     } // Ends .infoContainer
     
     .buttonContainer {
-        width: 50%;
-        margin: 0 auto;
+        .basic-set(@width:60%, @m-top:0, @m-right:auto);
         text-align: center;
-        .flex(row, space-around, stretch);
+        .flex(row, space-evenly, center);
+
 
         .button {
-            width: 100%;
-            margin: 0 auto;
-            padding: 40%;
-            font-size: 1.5rem;
-            line-height: 1.2;
+            .basic-set(@width:100%, @m-top:0, @m-right:auto, @m-left:-30%, @p-top:40%);
+            .font-set(@size:1.5rem, @height:1.2);
             color: @pink-white;
             background-color: @dark-bg;
             border: 2px outset rgb(4, 77, 33);
             border-radius: @radius;
             .shadow(0, 15px, 19px, 0);
+            object-fit: scale;
         } // Ends .button
+
+        .button:hover {
+            background-color: darken(@dark-bg, 5%);
+
+            span {
+                color: rgb(248, 104, 128);
+            }
+        }
 
         .button:active {
             .shadow(0, 7px, 11px, 0);
@@ -50,9 +55,8 @@
         } // Ends a
 
         span {
-            font-size: 1.1rem;
-            line-height: 1;
-        }
+            .font-set(@size:1.1rem, @height:1);
+        } // Ends span
     } // Ends .buttonContainer
 
     @media @mobile {
@@ -61,36 +65,32 @@
         border-bottom: 5px solid black;
 
         .infoContainer {
-            width: 80%;
-            margin: 25% auto 12.5%;
-            padding: 3%;
-            font-size: 1.5rem;
+            .basic-set(@width:80%, @m-top:25%, @m-right:auto, @m-bottom:12.5%, @p-top:3%);
+            .font-set(@size:1.5rem);
         } // Ends .infoContainer
 
         .buttonContainer {
-            width: 50%;
-            margin: 0 auto;
+            .basic-set(@width:50%, @m-top:0, @m-right:auto);
             .flex(row, space-between, stretch);
             
             .button {
-                padding: 25%;
-                font-size: 1.3rem;
+                .basic-set(@p-top:25%);
+                .font-set(@size:1.3rem);
             } // Ends .button
         } // Ends .buttonContainer
     } // Ends @media @mobile
 } // Ends .top
 
 .bottom {
-    margin: 3%;
+    .basic-set(@m-top:3%);
     .flex(column, space-evenly, stretch);
 
     .contentContainer {
         margin: 0 0 4%;
-        .flex(row, space-between, stretch);
+        .flex(row, space-between, space-evenly);
         
         img {
-            width: 30%;
-            margin-right: 4%;
+            .basic-set(@width:30%);
             border: @border;
             border-radius: @radius;
             .shadow(0, 5px, 8px, 0);
@@ -98,17 +98,17 @@
         } // Ends img
 
         .textBlock {
-            margin: 0 auto;
-            padding: 3%;
-            font-size: 1.3rem;
+            .basic-set(@m-top:0, @m-right:auto, @m-left:3%, @p-top:3%);
+            .font-set(@size:1.3rem);
             background-color: @text-box;
             border: @border;
             border-radius: @radius;
             .shadow(0, 5px, 8px, 0);
 
             p {
-                padding: 1% 0;
-                line-height: 1.25;
+                .basic-set(@p-top:1%, @p-right:0);
+                .font-set(@height:1.25);
+                
             } // Ends p
         } // Ends .textBlock
     } // Ends .contentContainer
@@ -117,8 +117,7 @@
         .flex(row-reverse, space-between, stretch);
 
         img {
-            width: 30%;
-            margin-left: 4%;
+            .basic-set(@width:30%, @m-left:4%, @m-right:'');
             border: @border;
             border-radius: @radius;
             .shadow(0, 5px, 8px, 0);
@@ -126,17 +125,16 @@
         } // Ends img
 
         .textBlock {
-            margin: 0 auto;
-            padding: 3%;
-            font-size: 1.3rem;
+            .basic-set(@m-top:0, @m-right:3%, @m-left:auto, @p-top:3%);
+            .font-set(@size:1.3rem);
             background-color: @text-box;
             border: @border;
             border-radius: @radius;
             .shadow(0, 5px, 8px, 0);
 
             p {
-                padding: 1% 0;
-                line-height: 1.25;
+                .basic-set(@p-top:1%, @p-right:0);
+                .font-set(@height:1.25);
             } // Ends p
         } // Ends .textBlock
     } // Ends .contentContainerRev
@@ -145,72 +143,68 @@
         .flex(row, space-between, flex-start);
 
         .contentContainer {
-            width: 50%;
-            padding: 0 2%;
+            .basic-set(@width:50%, @p-top:0, @p-right:2%);
             .flex(column, center, center);
             
             img {
-                width: 100%;
-                margin: 0 2%;
+                .basic-set(@width:100%, @m-top:0, @m-right:2%);
             } // Ends img
             
             .textBlock {
-                margin-top: 1.5%;
+                .basic-set(@m-top:1.5%, @m-right:'', @m-bottom:'');
             } // Ends .textBlock
         } // Ends .contentContainer
 
         .contentContainerRev {
-            width: 50%;
-            padding: 0 2%;
+            .basic-set(@width:50%, @p-top:0, @p-right:2%);
             .flex(column, center, center);
 
             img {
-                width: 100%;
-                margin: 0 2%;
+                .basic-set(@width:100%, @m-top:0, @m-right:2%);
             } // Ends img
 
             .textBlock {
-                margin-top: 1.5%;
+                .basic-set(@m-top:1.5%, @m-right:'', @m-bottom:'');
             } // Ends .textBlock
         } // Ends .contentContainerRev
     } // Ends @media @tablet
 
     @media @mobile {
-        margin: 5%;
+        .basic-set(@m-top:5%);
         .flex(column, space-evenly, center);
 
         .contentContainer {
-            width: 95%;
-            margin: 0 auto 8%;
+            .basic-set(@width:95%, @m-top:0, @m-right:auto, @m-bottom:8%);
             .flex(column, center, center);
 
             img {
-                width: 100%;
-                margin: 0 auto 2%;
+                .basic-set(@width:100%, @m-top:0, @m-right:auto, @m-bottom:2%);
             } // Ends img
     
             .textBlock {
-                margin: 0 auto;
-                padding: 4%;
-                font-size: 1.7rem;
+                .basic-set(@m-top:0, @m-right:auto, @p-top:4%);
+                .font-set(@size:1.7rem);
             } // Ends .textBlock
         } // Ends .contentContainer
 
         .contentContainerRev {
-            width: 95%;
-            margin: 0 auto;
+            .basic-set(@width:95%, @m-top:0, @m-right:auto);
             .flex(column, center, center);
 
             img {
-                width: 100%;
-                margin: 0 auto 2%;
+                .basic-set(@width:100%, @m-top:0, @m-right:auto, @m-bottom:2%);
             } // Ends img
     
             .textBlock {
-                margin: 0 auto;
-                padding: 4%;
-                font-size: 1.7rem;
+                .basic-set(@m-top:0, @m-right:auto, @p-top:4%);
+                .font-set(@size:1.7rem);
             } // Ends .textBlock
         } // Ends .contentContainerRev
     } // Ends @media @mobile
 } // Ends .bottom
+
+p:hover {
+    span{
+        color: rgb(248, 104, 128);
+    }
+}
