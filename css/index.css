@@ -1,3 +1,14 @@
+@keyframes flameBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -177,6 +188,15 @@ header {
     margin: 0 auto;
   }
 }
+@media (max-width: 675px) {
+  .logoBox .logo {
+    width: 28%;
+    padding: 2% 0;
+  }
+  .logoBox h1 {
+    font-size: 2.3rem;
+  }
+}
 @media (max-width: 500px) {
   .logoBox .logo {
     width: 30%;
@@ -214,6 +234,18 @@ nav .navItem:hover {
 @media (max-width: 800px) {
   nav {
     width: 60%;
+  }
+}
+@media (max-width: 675px) {
+  nav {
+    width: 60%;
+  }
+  nav .navVl {
+    border: 1.5px solid #E7D7C1;
+  }
+  nav .navItem {
+    padding: 1%;
+    font-size: 0.95rem;
   }
 }
 @media (max-width: 500px) {
@@ -279,6 +311,7 @@ footer h5 {
 .top .buttonContainer {
   width: 60%;
   margin: 0 auto 0 auto;
+  padding: "" "" "" "";
   text-align: center;
   display: flex;
   flex-direction: row;
@@ -362,7 +395,9 @@ footer h5 {
   align-items: stretch;
 }
 .bottom .contentContainer {
-  margin: 0 0 4%;
+  width: "";
+  margin: 0 0 4% 0;
+  padding: "" "" "" "";
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -396,6 +431,11 @@ footer h5 {
   font-size: "";
   font-weight: "";
   line-height: 1.25;
+}
+.bottom .break {
+  width: "";
+  margin: -2% -2% -2% -2%;
+  padding: "" "" "" "";
 }
 .bottom .contentContainerRev {
   display: flex;
@@ -533,6 +573,54 @@ footer h5 {
     line-height: "";
   }
 }
+@media (min-width: 1375px) {
+  .bottom {
+    width: "";
+    margin: 6% 6% 6% 6%;
+    padding: "" "" "" "";
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: stretch;
+    flex-wrap: wrap;
+  }
+  .bottom .contentContainer {
+    width: "";
+    margin: "" "" 25% "";
+    padding: "" "" "" "";
+  }
+  .bottom .contentContainer img {
+    width: 20%;
+    margin: "" "" "" "";
+    padding: "" "" "" "";
+  }
+  .bottom .contentContainer .textBlock {
+    width: 60%;
+    margin: "" "" "" "";
+    padding: "" "" "" "";
+    font-size: 1.5rem;
+    font-weight: "";
+    line-height: "";
+  }
+  .bottom .break {
+    width: 100%;
+    margin: 1% 1% 1% 1%;
+    padding: "" "" "" "";
+  }
+  .bottom .contentContainerRev img {
+    width: 20%;
+    margin: "" "" "" "";
+    padding: "" "" "" "";
+  }
+  .bottom .contentContainerRev .textBlock {
+    width: 60%;
+    margin: "" "" "" "";
+    padding: "" "" "" "";
+    font-size: 1.5rem;
+    font-weight: "";
+    line-height: "";
+  }
+}
 p:hover span {
   color: #f86880;
 }
@@ -646,21 +734,21 @@ p:hover span {
 }
 @media (max-width: 500px) {
   .personContainer {
-    width: 90%;
+    width: 80%;
     margin: 4% auto 4% auto;
     padding: "" "" "" "";
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
+    align-items: stretch;
   }
   .personContainer img {
-    width: 100%;
+    width: 99%;
     margin: "" "" "" "";
     padding: "" "" "" "";
   }
   .personContainer .aboutContainer {
-    width: 100%;
+    width: 94%;
     margin: "" "" "" "";
     padding: "" "" "" "";
   }
@@ -739,4 +827,35 @@ p:hover span {
     justify-content: space-between;
     align-items: center;
   }
+}
+.hero {
+  height: 90vh;
+  margin: 0 auto;
+  background-image: url("../img/weld.jpg");
+  background-color: black;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: stretch;
+  border-bottom: 6px solid black;
+}
+.hero .constructCont {
+  width: 50%;
+  margin: 0 auto 0 auto;
+  padding: 3% 3% 3% 3%;
+  font-size: 2rem;
+  font-weight: bolder;
+  line-height: 2;
+  text-align: center;
+  color: #F7EDF0;
+  text-shadow: 4px 4px 6px black;
+  background: linear-gradient(-95deg, rgba(3, 31, 66, 0.75), rgba(151, 37, 3, 0.75), rgba(71, 9, 9, 0.75), rgba(211, 173, 4, 0.75));
+  background-size: 400% 400%;
+  animation: flameBG 18s ease infinite;
+  border-radius: 25px;
+  box-shadow: 0 12px 16px 0 #1f1e1e;
 }
