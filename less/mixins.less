@@ -8,3 +8,23 @@
 .shadow(@top, @right, @bottom, @left){
     box-shadow: @top @right @bottom @left rgb(31, 30, 30);
 }
+
+.basic-set(@width:"", 
+@m-top:"", 
+@m-right:@m-top, 
+@m-bottom:@m-top, 
+@m-left:@m-right, 
+@p-top:"", 
+@p-right:@p-top, 
+@p-bottom:@p-top, 
+@p-left:@p-right){
+    width: @width;
+    margin: @m-top @m-right @m-bottom @m-left;
+	padding: @p-top @p-right @p-bottom @p-left;
+}
+
+.font-set(@size:"", @weight:"", @height:""){
+    font-size: @size;
+    font-weight: @weight;
+    line-height: @height;
+}
