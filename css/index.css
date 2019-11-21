@@ -150,6 +150,8 @@ a {
 }
 header {
   width: 100%;
+  margin: "" "" "" "";
+  padding: "" "" "" "";
   background: rgba(83, 19, 30, 0.9);
   display: flex;
   flex-direction: row;
@@ -167,122 +169,162 @@ header {
   }
 }
 .logoBox {
+  width: 150px;
+  margin: "" "" "" "";
+  padding: 1% 7% 1% 7%;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  width: 150px;
-  padding: 1% 7%;
 }
 .logoBox .logo {
   width: 50%;
-  padding: 1%;
+  margin: "" "" "" "";
+  padding: 1% 1% 1% 1%;
 }
 .logoBox h1 {
-  color: #E7D7C1;
+  width: "";
+  margin: "" "" "" "";
+  padding: "" "" "" 15%;
   font-size: 4rem;
-  padding-left: 15%;
+  font-weight: "";
+  line-height: "";
+  color: #E7D7C1;
 }
 @media (max-width: 800px) {
   .logoBox {
-    margin: 0 auto;
+    width: "";
+    margin: 0 auto 0 auto;
+    padding: "" "" "" "";
   }
 }
 @media (max-width: 675px) {
   .logoBox .logo {
     width: 28%;
-    padding: 2% 0;
+    margin: "" "" "" "";
+    padding: 2% 0 2% 0;
   }
   .logoBox h1 {
     font-size: 2.3rem;
+    font-weight: "";
+    line-height: "";
   }
 }
 @media (max-width: 500px) {
   .logoBox .logo {
     width: 30%;
-    padding: 2% 0;
+    margin: "" "" "" "";
+    padding: 2% 0 2% 0;
   }
   .logoBox h1 {
     font-size: 2.5rem;
+    font-weight: "";
+    line-height: "";
   }
 }
 nav {
+  width: 50%;
+  margin: "" "" "" "";
+  padding: "" "" "" "";
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  width: 50%;
 }
 nav .navVl {
   width: 0;
+  margin: 0 -3% 0 -3%;
+  padding: "" "" "" "";
   height: 30px;
   border: 2px solid #E7D7C1;
   border-radius: 2px;
-  margin: 0 -3%;
 }
 nav .navItem {
-  color: #E7D7C1;
   font-size: 1.2rem;
-  text-decoration: none;
   font-weight: bold;
+  line-height: "";
+  color: #E7D7C1;
+  text-decoration: none;
   text-align: center;
 }
 nav .navItem:hover {
-  transform: scale(1.1);
+  font-size: "";
   font-weight: bolder;
+  line-height: "";
+  transform: scale(1.1);
 }
 @media (max-width: 800px) {
   nav {
     width: 60%;
+    margin: "" "" "" "";
+    padding: "" "" "" "";
   }
 }
 @media (max-width: 675px) {
   nav {
     width: 60%;
+    margin: "" "" "" "";
+    padding: "" "" "" "";
   }
   nav .navVl {
     border: 1.5px solid #E7D7C1;
   }
   nav .navItem {
-    padding: 1%;
+    width: "";
+    margin: "" "" "" "";
+    padding: 1% 1% 1% 1%;
     font-size: 0.95rem;
+    font-weight: "";
+    line-height: "";
   }
 }
 @media (max-width: 500px) {
   nav {
+    width: 90%;
+    margin: "" "" "" "";
+    padding: 1% 2% 3% 2%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    width: 90%;
-    padding: 1% 2% 3%;
   }
   nav .navVl {
+    width: "";
+    margin: 0 0 0 0;
+    padding: "" "" "" "";
     border: 1px solid #E7D7C1;
-    margin: 0;
   }
   nav .navItem {
     font-size: 1rem;
+    font-weight: "";
+    line-height: "";
   }
 }
 footer {
   width: 100%;
+  margin: "" "" "" "";
+  padding: "" "" "" "";
   background-color: #53131e;
 }
 footer h5 {
+  font-size: 1.25rem;
+  font-weight: "";
   line-height: 3;
   color: #E7D7C1;
   text-align: center;
-  font-size: 1.25rem;
 }
 @media (max-width: 500px) {
   footer h5 {
     font-size: 1.1rem;
+    font-weight: "";
+    line-height: "";
   }
 }
 .top {
+  width: "";
+  margin: 0 auto 0 auto;
+  padding: "" "" "" "";
   height: 700px;
-  margin: 0 auto;
   background-image: url("../img/mainPic.jpg");
   background-color: #023818;
   background-position: center;
@@ -625,6 +667,9 @@ p:hover span {
   color: #f86880;
 }
 .topAbout {
+  width: "";
+  margin: 0 auto 0 auto;
+  padding: "" "" "" "";
   height: 700px;
   background-image: url("../img/heartPears.jpg");
   background-color: #023818;
@@ -829,8 +874,10 @@ p:hover span {
   }
 }
 .hero {
+  width: "";
+  margin: 0 auto 0 auto;
+  padding: "" "" "" "";
   height: 90vh;
-  margin: 0 auto;
   background-image: url("../img/weld.jpg");
   background-color: black;
   background-position: center;
@@ -858,4 +905,25 @@ p:hover span {
   animation: flameBG 18s ease infinite;
   border-radius: 25px;
   box-shadow: 0 12px 16px 0 #1f1e1e;
+}
+@media (max-width: 800px) {
+  .hero .constructCont {
+    font-size: 1.75rem;
+    font-weight: "";
+    line-height: "";
+  }
+}
+@media (max-width: 675px) {
+  .hero .constructCont {
+    font-size: 1.5rem;
+    font-weight: "";
+    line-height: "";
+  }
+}
+@media (max-width: 500px) {
+  .hero .constructCont {
+    font-size: 1.25rem;
+    font-weight: "";
+    line-height: "";
+  }
 }

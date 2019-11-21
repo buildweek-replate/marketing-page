@@ -1,6 +1,6 @@
 .top {
+    .basic-set(@m-top:0, @m-right:auto);
     height: 700px;
-    margin: 0 auto;
     background-image: url("../img/mainPic.jpg");
     background-color: @dark-bg;
     background-position:center;
@@ -42,8 +42,8 @@
 
             span {
                 color: rgb(248, 104, 128);
-            }
-        }
+            } // Ends span
+        } // Ends .button:hover
 
         .button:active {
             .shadow(0, 7px, 11px, 0);

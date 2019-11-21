@@ -1,15 +1,15 @@
 footer {
-    width: 100%;
+    .basic-set(@width:100%);
     background-color: @footer-bg;
     
     h5 {
-        line-height: 3;
+        .font-set(@size:1.25rem, @height:3);
         color: @header-text;
         text-align: center;
-        font-size: 1.25rem;
 
         @media @mobile {
-            font-size: 1.1rem;
+            .font-set(@size:1.1rem);
+
         } // Ends @media @mobile
     } // Ends h5
 } // Ends footer
