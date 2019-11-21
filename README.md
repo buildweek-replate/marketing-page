@@ -40,6 +40,7 @@ I used Node, yarn, Less, and less-watch-compiler.
     * The images used can be found in the **img** folder.
     * The LESS files can be found in the **less** folder.
         * **about.less** houses the About Us page styles.
+        * **construct.less** has the styles for an Under Construction page, if needed (to link to until other links are live for the Sign Up/Sign In links).
         * **footer.less** houses the Footer styles.
         * **global.less** houses a few global styles.
         * **header.less** houses the header styles.
@@ -51,6 +52,7 @@ I used Node, yarn, Less, and less-watch-compiler.
     * Mobile and Tablet styling is nested within the LESS files.
     * The Landing page content is found in **index.html**.
     * The About Us page content is found in **about.html**.
+    * There is an optional Under Construction page found in **construction.html**.
 
 ---
 
