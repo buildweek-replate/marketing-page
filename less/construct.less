@@ -21,7 +21,18 @@
         animation: flameBG 18s ease infinite;
         border-radius: @radius;
         .shadow(0, 12px, 16px, 0);
-    }
+
+        @media @tablet {
+            .font-set(@size:1.75rem);
+        }
+        @media @tablet-sm {
+            .font-set(@size:1.5rem);
+        }
+    
+        @media @mobile {
+            .font-set(@size:1.25rem);
+        }
+    } // Ends .constructCont
 } // Ends .hero
 
 // Gradient

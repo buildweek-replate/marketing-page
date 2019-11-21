@@ -859,3 +859,24 @@ p:hover span {
   border-radius: 25px;
   box-shadow: 0 12px 16px 0 #1f1e1e;
 }
+@media (max-width: 800px) {
+  .hero .constructCont {
+    font-size: 1.75rem;
+    font-weight: "";
+    line-height: "";
+  }
+}
+@media (max-width: 675px) {
+  .hero .constructCont {
+    font-size: 1.5rem;
+    font-weight: "";
+    line-height: "";
+  }
+}
+@media (max-width: 500px) {
+  .hero .constructCont {
+    font-size: 1.25rem;
+    font-weight: "";
+    line-height: "";
+  }
+}
