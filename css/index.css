@@ -522,7 +522,7 @@ footer h5 {
     align-items: flex-start;
   }
   .bottom .contentContainer {
-    width: 50%;
+    width: 45%;
     margin: "" "" "" "";
     padding: 0 2% 0 2%;
     display: flex;
@@ -541,7 +541,7 @@ footer h5 {
     padding: "" "" "" "";
   }
   .bottom .contentContainerRev {
-    width: 50%;
+    width: 45%;
     margin: "" "" "" "";
     padding: 0 2% 0 2%;
     display: flex;
@@ -588,7 +588,7 @@ footer h5 {
     width: "";
     margin: 0 auto 0 auto;
     padding: 4% 4% 4% 4%;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     font-weight: "";
     line-height: "";
   }
@@ -610,7 +610,7 @@ footer h5 {
     width: "";
     margin: 0 auto 0 auto;
     padding: 4% 4% 4% 4%;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     font-weight: "";
     line-height: "";
   }
